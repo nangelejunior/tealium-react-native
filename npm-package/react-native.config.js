@@ -1,8 +1,3 @@
-module.exports = {
-    project: {
-      ios: {},
-      android: {}, 
-    },
-    commands: [require('node ./node_modules/tealium-react-native/scripts/postlink.js'),
-               require('node ./node_modules/tealium-react-native/scripts/preunlink.js')]
-};
+// This is added to silence the warning that RN CLI gives about legacy "rnpm".
+// We can remove it once "rnpm" is removed from "package.json".
+module.exports = {};
